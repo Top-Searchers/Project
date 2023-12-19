@@ -1,0 +1,82 @@
+.cart {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+}
+.cart > main {
+    padding: 2rem;
+    overflow-y: auto;
+}
+.cart > main::-webkit-scrollbar {
+    display: none;
+}
+.cart > main > h1 {
+    color: #fff;
+    font: 100 2rem "Roboto";
+}
+.cart > aside {
+    border-radius: 100px 0 0 100px;
+    background-color: #1d1d1d;
+    color: #fff;
+    height: 60%;
+    width: 100%;
+    box-shadow: -10px 0px 10px rgba(0, 0, 0, 0.182);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.cart > aside > h2 {
+    margin: 1rem;
+    font: 100 1.8rem "Roboto";
+    letter-spacing: 2px;
+}
+.cart > aside > h2:last-of-type {
+    font-weight: 600;
+}
+.cartItem {
+    background-color: #fff;
+    width: 100%;
+    border-radius: 10px;
+    margin: 2rem 0;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr 1fr;
+    align-items: center;
+}
+.cartItem img {
+    width: 100%;
+    height: 200%;
+    object-fit: contain;
+}
+.cartItem > div {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+.cartItem > div button {
+    width: 30px;
+    height: 30px;
+    border: none;
+    background-color: #1d1d1d;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.cartItem > div button:hover {
+    background-color: #121212;
+}
+.cartItem > div > p {
+    width: 30px;
+    height: 30px;
+    display: grid;
+    place-items: center;
+}
+.cartItem > svg {
+    cursor: pointer;
+    font-size: 1.5rem;
+    display: inline-block;
+    margin: auto;
+}
+.cartItem > svg:hover {
+    color: #8e44ad;
+}

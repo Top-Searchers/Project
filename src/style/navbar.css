@@ -1,0 +1,22 @@
+.marquee {
+    line-height: 50px;
+    background-color: transparent;
+    color: red;
+    white-space: nowrap;
+    overflow: hidden;
+    box-sizing: border-box;
+    width: 100vw;
+    height: 6vh;
+    margin-top: -8px;
+    padding: 0px;
+
+}
+.marquee p {
+    display: inline-block;
+    padding-left: 100%;
+    animation: marquee 15s linear infinite;
+}
+@keyframes marquee {
+    0%   { transform: translate(0, 0); }
+    100% { transform: translate(-100%, 0); }
+}
